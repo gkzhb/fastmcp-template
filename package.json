@@ -8,9 +8,10 @@
     "model-context-protocol",
     "mcp"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --minify",
+    "dev": "tsup src/index.ts --watch --onSuccess \"node dist/index.js\"",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },
@@ -22,7 +23,8 @@
     "@antfu/eslint-config": "^4.13.2",
     "eslint": "^9.27.0",
     "lint-staged": "^16.1.0",
-    "simple-git-hooks": "^2.13.0"
+    "simple-git-hooks": "^2.13.0",
+    "tsup": "^8.5.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
