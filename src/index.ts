@@ -13,8 +13,10 @@ server.addTool({
     a: z.number(),
     b: z.number(),
   }),
-  execute: async (args) => {
-    return String(args.a + args.b)
+  execute: async (args, { log }) => {
+    const sum = String(args.a + args.b)
+    log.info('addTool result', { sum })
+    return sum
   },
 })
 
