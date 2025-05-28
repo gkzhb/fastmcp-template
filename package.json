@@ -9,9 +9,12 @@
     "mcp"
   ],
   "main": "dist/index.js",
+  "bin": {
+    "your-cli-name": "dist/index.js"
+  },
   "scripts": {
-    "build": "tsup src/index.ts --minify",
-    "dev": "tsup src/index.ts --watch --onSuccess \"node dist/index.js\"",
+    "build": "tsup src/index.ts",
+    "dev": "tsup src/index.ts --watch",
     "inspect": "fastmcp inspect src/index.ts",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
