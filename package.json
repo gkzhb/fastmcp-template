@@ -1,9 +1,17 @@
 {
   "name": "fastmcp-template",
   "version": "0.0.1",
-  "description": "MCP Server",
-  "author": "",
+  "description": "MCP Server Template",
+  "author": "gkzhb",
   "license": "MIT",
+  "homepage": "https://github.com/gkzhb/fastmcp-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkzhb/fastmcp-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gkzhb/fastmcp-template/issues"
+  },
   "keywords": [
     "model-context-protocol",
     "mcp"
