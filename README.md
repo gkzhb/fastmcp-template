@@ -15,5 +15,6 @@ Prerequisites:
 
 1. Install dependencies: `pnpm install`
 2. Develop with live reload: `pnpm run dev` (uses tsup watch mode)
+3. Debug MCP server: `pnpm run inspect` (test MCP server with [MCP Inspector](https://github.com/modelcontextprotocol/inspector))
 3. Build for production: `pnpm run build` (tsup production bundle)
 4. Lint your code: `pnpm run lint` (ESLint with @antfu/eslint-config)
